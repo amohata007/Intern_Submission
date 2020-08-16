@@ -1,0 +1,12 @@
+.navbar {
+    margin: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    height: 60px;
+    color: white;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-10">
+            <!-- Booking form to take inputs and confirm the booking -->
+            <form [formGroup]="bookingForm" (ngSubmit)="booking()" ngNativeValidate>
+                <h2>Book Show</h2>
+                <hr>
+            <div class="form-group form-row">
+                <label class= "col-lg-3" for="movieName">Select Movie</label>
+                <div class="col-lg-9">
+                    <select name="movieName" id="movieName" class="form-control" required formControlName="movieName" (change)="changeMovie($event.target.value)">
+                        <option *ngFor = "let movie of allMovies" [ngValue]="movie.name">{{movie.name}}</option>
+                    </select>
+                </div>
+                
+            </div>
+    
+            <div class="form-group form-row">
+                <label class= "col-lg-3" for="time">Select Time</label>
+                <div class="col-lg-9">
+                    <select name="time" id="time" class="form-control" required formControlName="time" >
+                        <option *ngFor = "let time of allTimes" [ngValue]="time">{{time}}</option>
+                    </select>
+                    
+                </div>
+                
+            </div>
+    
+            <div class="form-group form-row">
+                <label class= "col-lg-3" for="seats">Number Of Seats</label>
+                <div class="col-lg-9">
+                    <input type="number" name="seats" class="form-control" id="seats" formControlName="seats" required min="1" max="10">
+                </div>
+                
+            </div>
+        
+            <div class="form-row text-center">
+                <button type="submit" class="btn btn-success">Book Now</button>
+            </div>
+            
+            
+            </form>
+        </div>
+    </div>
+</div>

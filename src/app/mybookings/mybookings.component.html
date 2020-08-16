@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="heading">All Bookings</h2>
+            <!-- table to show all the products -->
+            <table class="table">
+                <thead class=" table-dark">
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Show Time</th>
+                        <th>No Of Seats</th>
+                        
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    
+                    <tr *ngFor="let booking of allBookings">
+                        
+                        <td>{{booking.movieName}}</td>
+                        <td>{{booking.time}}</td>
+                        <td>{{booking.seats}}</td>
+   
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

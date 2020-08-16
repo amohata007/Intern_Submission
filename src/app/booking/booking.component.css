@@ -1,0 +1,22 @@
+form {
+    border: 1px solid green;
+    padding: 15px;
+    margin-top: 150px;
+    margin-left: 200px;
+    /* text-align: center; */
+    background-color: lightgrey;
+}
+
+h2 {
+    text-align: center;
+    /* background-color: cornsilk; */
+}
+
+.text-center {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
