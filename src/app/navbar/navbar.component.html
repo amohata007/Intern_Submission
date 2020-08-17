@@ -3,10 +3,10 @@
       <div class="navbar-header">
         <a class="navbar-brand" routerLink="/home">MovieBuzz</a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" (click)="isShown = !isShown" [attr.aria-expanded]="isShown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span> 
       </button>
-      <div class="collapse navbar-collapse text-right" [ngClass]="{ 'show': isShown }" id="navbarNav" data-toggle="dropdown">
+      <div class="collapse navbar-collapse text-right" id="navbarNav" data-toggle="dropdown">
         <ul class="navbar-nav ml-auto">
         
            <li class="nav-item"><a class="nav-link" routerLink="/booking">Book Now</a></li> 
